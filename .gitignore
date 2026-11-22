@@ -1,0 +1,17 @@
+# Virtual environment: rebuilt from requirements.txt, never committed
+.venv/
+
+# Data: several GB, downloadable from data.matr.io, too big for git.
+# Keep the folders themselves via .gitkeep files.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Python / Jupyter clutter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store

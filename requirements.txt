@@ -1,0 +1,23 @@
+# Python 3.11. Versions are pinned so results are reproducible:
+# small numerical differences between library versions can shift model outputs.
+
+# Core numerics
+numpy==2.4.6
+scipy==1.17.1          # skewness/kurtosis, interpolation
+pandas==3.1.1          # tables of features and results
+
+# Reading MATLAB v7.3 .mat files (they are HDF5 under the hood)
+h5py==3.16.0
+
+# Modeling
+scikit-learn==1.9.1    # LinearRegression, ElasticNetCV, LogisticRegressionCV, pipelines
+
+# Plotting
+matplotlib==3.11.2
+
+# Notebooks
+jupyterlab==4.6.6
+ipykernel==7.4.0
+
+# Testing (62 tests in tests/; run: python -m pytest -q tests)
+pytest==9.2.0

@@ -1,0 +1,13 @@
+[project]
+name = "cellspan"
+version = "1.0.0"
+description = "Predicting LFP cell cycle life from the first 100 cycles"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11,<3.12"
+# Exact pinned versions live in requirements.txt (install with pip install -r).
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::sklearn.exceptions.ConvergenceWarning"]
